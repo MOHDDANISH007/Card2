@@ -1,0 +1,155 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+.container {
+    width: 100vw ;
+    height: 100vh ;
+    background: #D3CCE3;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #E9E4F0, #D3CCE3);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.card {
+    width: 300px;
+    height: 500px;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+}
+.card img{
+    width: 100%;
+    height: 35%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.card p{
+    font-weight: bold;
+    text-align: center;
+}
+
+.amount{
+    width: 80%;
+    height: 10%;
+    border-radius: 10px;
+    background: #e3e3e3; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.left-box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.left-box .image-box{
+    width: 25%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.right-box a{
+    padding-right: 10px ;
+}
+
+
+#proceed{
+    width: 80%;
+    height: 9%;
+    border-radius: 10px;
+    background-color: rgb(1, 1, 78);
+    color: white;
+    box-shadow: 10px 10px 90px 1px rgb(1, 1, 78);
+    cursor: pointer;
+}
+
+
+.card a{
+    text-decoration: none;
+    color: rgb(1, 1, 78);
+    font-size: 1.1rem;
+}
+
+@media screen and (max-width: 480px) {  /* for mobile devices */
+    .amount {
+        width: 90%;
+        height: 90%;
+        flex-direction: column;
+    }
+    .left-box {
+        flex-direction: column;
+    }
+    .right-box {
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {  /* for tablets */
+    .amount {
+        width: 90%;
+        height: 90%;
+        flex-direction: column;
+    }
+    .left-box {
+        flex-direction: column;
+    }
+    .right-box {
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {  /* for laptops */
+    .card{
+        height: 500px;
+    }
+    .amount {
+        width: 80%;
+        height: 40%;
+        flex-direction: row;
+    }
+    .left-box {
+        flex-direction: row;
+    }
+    .right-box {
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width: 728px) {  /* for larger screens */
+    .card{
+        height: 450px;
+    }
+    
+    .amount {
+        width: 80%;
+        height: 10%;
+        flex-direction: row;
+    }
+    .left-box {
+        flex-direction: row;
+    }
+    .right-box {
+        flex-direction: row;
+    }
+}
+
+
+
